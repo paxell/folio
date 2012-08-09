@@ -1,0 +1,393 @@
+/*//PAXELL PORTFOLIO WEBSITE //*/
+
+/* 1.0 Override styles */
+
+html, body, h1, h2, h3, p, ul, ul li, label, input, textarea {
+  margin:0;
+  padding:0;
+  }
+body {
+  background:url(../images/bg.png);
+  font-family:Georgia, serif;
+  font-size:16px;
+  color:#0063a1;
+  padding:20px;
+}
+a {
+  color:#000;
+  text-decoration:none;
+  }
+a:hover, a.active {
+  color:#0063a1;
+  }
+a:hover {
+  cursor:pointer;
+  }
+.clear {
+  clear:both;
+  }
+.clearr {
+  clear:right;
+  }
+.clearl {
+  clear:left;
+  }
+
+/* 2.0 Unique styles */
+
+nav {
+  border-top:2px solid #ff0000;
+  text-transform:uppercase;
+  padding:15px 5px;
+  max-width:100%;
+  text-align:center;
+  }
+nav a {
+  padding:0 5px;
+  font-size:18px;
+  }
+#hero {
+  border-top:1px solid #ff0000;
+  padding-bottom:0px;
+  }
+footer {
+  border-top:1px solid #ff0000;
+  padding-top:20px;
+  margin-top:40px;
+  }
+  
+/* 3.0 Combination styles */
+
+#hero img, .imgcont img {
+  max-width:100%;
+ }
+#tagline, h1 {
+  text-shadow: #fff 0 2px 0;
+  }
+#tagline, .highlight, h3 {
+  color:#ff0000;
+  }
+.pleft, .pright, .plefth, .prighth {
+  width:100%;
+  }
+.imgcont, .submitbtn {
+  background:url(../images/corner.png) no-repeat bottom right;
+  }
+h1, h2 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  }
+h2, h3 {
+  font-weight:normal;
+  }
+h3, .caption {
+  font-style:italic;
+  }
+nav, footer {
+  text-align:center;
+  }
+footer, .caption {
+  font-size:12px;
+  }
+footer, .feature, h2 {
+  color:#000;
+  }
+
+/* 4.0 Text styles */
+
+h1 {
+  margin:20px 0 12px 0;
+  line-height:40px;
+  font-size:40px;
+  color:#0063a1;
+  }
+#label h1 {
+  margin-top:8px;
+  }
+h2 {
+  font-size:24px;
+  margin:6px 0 12px 0;
+  text-align:left;
+  }
+h3 {
+  font-size:16px;
+  margin:8px 0 12px 0;
+  }
+.caption {
+  font-style:italic;
+  text-align:left;
+  padding:8px 0;
+  line-height:16px;
+  }
+.feature {
+  font-size:18px;
+  line-height:24px;
+  }
+.feature h1 {
+  margin-top:20px;
+  }
+p {
+  margin:6px 0;
+  line-height:22px;
+  }
+.pleft, .plefth {
+  float:left;
+  margin:10px 20px 0 0;
+  }
+.pright, .prighth {
+  float:right;
+  margin:10px 0 0 20px;
+  }
+  
+/* 5.0 Form Styles */
+
+label {
+  color:#000;
+  }
+label, input, textarea {
+  display:block;
+  }
+label {
+  margin-bottom:3px; 
+  }
+textarea {
+  height:80px;
+  }
+#contact {
+  margin-top:20px;
+  }
+.formfield {
+  border:1px solid #0063a1;
+  margin-bottom:16px;
+  padding:6px;
+  font-size:16px;
+  width:95%;
+  color:#0063a1;
+  }
+.submitbtn {
+  font-size:20px;
+  color:#ff0000;
+  border:1px solid #ff0000;
+  text-transform:uppercase;
+  color:#ff0000;
+  background-color:#fff;
+  font-family:Georgia, serif;
+  padding:4px 24px 4px 16px;
+  }
+.submitbtn:hover {
+  background:#ff0000;
+  color:#fff;
+  border:1px solid #fff;
+  cursor:pointer;
+  }
+  
+/* 6.0 Layout styles */
+
+.logo {
+  background:url(../images/logo.png) no-repeat top left;
+  width:254px;
+  padding-top:55px;
+  margin:20px auto 34px auto;
+  text-align:center;
+  }
+.imgcont {
+  border-color:#ff0000;
+  border-style:solid;
+  border-width:1px 1px 2px 1px;
+  padding:12px 12px 12px 8px;
+  text-align:center;
+  }
+.imgcont img {
+  border:2px solid #fff;
+  }
+.work {
+  margin:20px 0;
+  }
+.work img {
+  max-width:30%;
+  }
+.work a {
+  /*margin-right:12px;*/
+  }
+.work a {
+  position:relative;
+  }
+.work img:hover {
+  border-color:#0063a1;
+  }
+.workcaption {
+  /*display:block;*/
+  position:absolute;
+  bottom:-20px;
+  left:0px;
+  /*padding:3px 6px;
+  background:#fff;*/
+  width:100%;
+  }
+.compact {
+  background:url(../images/mark.png) no-repeat top left;
+  width:54px;
+  height:37px;
+  float:left;
+  padding-top:0px;
+  margin:0 10px 0 0;
+  }
+.compact #tagline {
+  display:none;
+  }
+.inner {
+  text-align:left;
+  padding-top:5px;
+  border-top:none;
+  border-bottom:2px solid #ff0000;
+  }
+.last {
+  margin-right:0;
+  }
+.left {
+  float:left;
+  margin:20px 20px 10px 0px;
+  }
+.right {
+  float:right;
+  margin:20px 0px 10px 20px;
+  }
+
+/* 0 - 640 px */
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+	.pleft, .pright, .plefth, .prighth {
+	  width:40%;
+	  }
+	.imgsm {
+	  max-width:45%;
+	  }
+}
+/* 959 - 1330px */
+
+@media screen and (min-width: 959px) {
+	header{
+	  border-bottom:1px solid #ff0000;
+	  }
+	.logo {
+	  float:left;
+	  margin:0 30px 0 0;
+	  padding-bottom:20px;
+	  text-align:left;
+	  }
+	.compact {/*note doubling up from above*/
+	  background:url(../images/logo.png) no-repeat top left;
+	  width:254px;
+	  padding:55px 30px 0 0;
+	  margin:0 0 20px 0;
+	  }
+	.compact #tagline {
+	  display:block;
+	  }
+	.inner {
+	  padding-top:21px;
+	  border-bottom:none;
+	  }
+	nav {
+	  float:left;
+	  border-top:0;
+	  padding:21px 50px 15px 80px;
+	  background:url(../images/divider.png) no-repeat 0 5px;
+	  border-bottom:0;
+	  text-align:left;
+	  }
+	#hero {
+	  margin:20px 20px 0 0;
+	  border-top:1px solid #ff0000;
+	  width:558px;
+	  float:left;
+	  }
+	#label {
+	  background:#fff;
+	  padding:10px;
+	  margin:20px 0;
+	  }
+	.feature {
+	  float:left;
+	  width:35%;
+	  padding-right:20px;
+	  }
+	.imgsm {
+	  max-width:30%;
+	  }
+	h2 {
+	  margin:0px;
+	  }
+	.work {
+	  float:left;
+	  margin-right:20px;
+	  width:28%;
+	  }
+	.work img {
+	  display:block;
+	  text-align:center;
+	  margin:12px 0;
+	  max-width:100%;
+	  }
+	.work h2 {
+	  margin-bottom:8px;
+	  }
+	.plefth, .prighth, .pleft, .pright {
+	  padding-top:20px;
+	  }
+	.clearl, .clearr {
+	  clear:none;
+	  }
+	.plefth, .prighth {
+	  width:30%;
+	  }
+	.pleft, .pright {
+	  width:20%;
+	  }
+	.imgcont {
+	  /*clear:left;*/
+	  }
+	#contact {
+	  float:left;
+	  }
+	#sociallinks {
+	  float:left;
+	  margin-left:20px;
+	  }
+	footer {
+	  text-align:left;
+	  }
+}
+
+/* 1330px + */
+
+@media screen and (min-width: 1330px) {
+	nav {
+	  width:65%;
+	}
+	#label {
+	  width:30%;
+	  float:left;
+	  margin:40px 20px 0 0;
+	  }
+	#hero {
+	  width:778px;
+	  }
+	.feature {
+	  width:30%;
+	  }
+	.pleft, .pright {
+	  width:15%;
+	  }
+	.plefth, .prighth {
+	  width:25%;
+	  }
+	.imgsm {
+	  max-width:100%;
+	  }
+	#sociallinks img, #sociallinks .caption {
+	  float:left;
+	  }
+	#sociallinks .caption {
+	  margin-left:12px;
+	  }
+}
