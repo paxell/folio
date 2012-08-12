@@ -1,23 +1,23 @@
 <?php include('include/head.php'); ?>
 
 <div id='label'>
-	<h1>'The Number Case'</h1>
+	<h1>Catalogue Cover</h1>
 	<h2>Aug - Dec 2009 for Origo Education</h2>
-	<h3>tags: packaging, branding, graphic design, illustration</h3>
+	<h3>graphic design, illustration</h3>
 </div>
 
-<div id='hero' class='imgcont'>
-	<a href='images/number-case.jpg' rel='lightbox[numbercase]' title='The 3 Number cases, colour coded for each year'>
-		<img src='images/number-case.jpg' alt='3 number cases'>
+<div id='hero' class='imgcont' style='width:524px;'>
+	<a href='images/work/cover.jpg' rel='lightbox[cover]' title='front cover design'>
+		<img src='images/work/cover-hero.jpg' alt='catalogue cover'>
 	</a>
-	<div class='caption'>the 3 Number cases, colour coded for each year</div>
+	<div class='caption'>front cover design (click for larger image)</div>
 </div>
-<div class='clear'></div>
 
-<p class='pleft'>This design included a logo, an outer case and inner card designs and stickers. It is a mathematics teaching tool for children from grades K to 2, so I felt it should look accordingly kid-friendly.</p>
-<div class='imgcont imgsm left'><a rel='lightbox[numbercase]' href='images/nc-2.jpg' title='picture cards: t-shirts, bottle caps and bird nests'><img src='images/nc-2.jpg' alt='picture cards detail'></a><div class='caption'>picture cards: t-shirts, bottle caps and nests</div></div>
-<p class='pleft'>Using detective and film noir genres for inspiration, visual cues were objects and styles like hat bands, old phone dials and dramatic typography. The highlight of the project was illustrating the the picture cards for year K. The product page can be found <a href='http://www.origoeducation.com/number-case/' target='_blank'>here</a>.</p>
-<div class='imgcont imgsm left'><a rel='lightbox[numbercase]' href='images/nc-3.jpg' title='year 2 number case'><img src='images/nc-3.jpg' alt='year 2 number case'></a><div class='caption'>year 2 number case</div></div>
+<p class='pleft'>The catalogue cover changes twice a year and the brief is fairly open: there must be visual references to mathematics and education which always presents an interesting challenge. For this design I decided to reflect the more 'interactive' direction in which ORIGO's products were heading by using mathematical symbols, numbers, and logos from existing products and rendering them like icons.</p>
+<p class='pleft'>The foreground elements were inspired by iphone apps, miniature icon design and laquered surfaces, while the background wisps were added to provide momentum and flow.</p>
+<div class='clear'></div>
+<div class='imgcont imgsm left'><img src='images/work/cover-1.jpg' alt='inner page'><div class='caption'>detail of an inner title page</div></div>
+<div class='imgcont imgsm left'><img src='images/work/cover-2.jpg' alt='back cover'><div class='caption'>back cover design</div></div>
 <div class='clear'></div>
 
 <?php include('include/foot.php'); ?>

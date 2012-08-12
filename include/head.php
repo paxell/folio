@@ -7,10 +7,10 @@
 
 <title>Paxell: The portfolio of Eleanor Paxman, interaction designer and developer</title>
 
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
-<script src='js/lightbox/js/lightbox.js' type='text/javascript'></script>
+<script src='js/lightbox.js' type='text/javascript'></script>
 <!-- allows html5 sectioning elements in IE etc -->
 <script src='js/html5shiv.js' type='text/javascript'></script>
 <!-- allows css3 media queries in IE etc - currently not working -->
@@ -32,14 +32,15 @@
 		};
 		
 		// Use alt tags as titles
-		/*$('.work a img').each(function() {
+		$('.work a img').each(function() {
 			$(this).after('<div class="workcaption">' + $(this).attr('alt') + '</div>');	
-		});*/
-		
-		$('.work a img').hover(function() {
-			var imgalt = $(this).attr('alt');
-			$('.caption').html(imgalt);
 		});
+		
+		/*$('.id a img').hover(function() {
+			var imgalt = $(this).attr('alt');
+			//needs to be specific to this caption's div
+			$('.idcap').html(imgalt);
+		});*/
 
 	});
 </script>
@@ -47,7 +48,7 @@
 <link rel='shortcut icon' href='images/favicon.png'>
 <link href='css/style.css' rel='stylesheet' type='text/css'>
 <link href='css/flexslider.css' rel='stylesheet' type='text/css'>
-<link href='js/lightbox/css/lightbox.css' rel='stylesheet' type='text/css'>
+<link href='css/lightbox.css' rel='stylesheet' type='text/css'>
 
 <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
 
@@ -60,14 +61,7 @@
 		<nav>
 			<a href='index.php'>home</a>
 			<a href='work.php'>work</a>
-			<!--
-			<a href='#'>interface design</a>
-			<a href='number_case.php'>graphic design</a>
-			<a href='number_case.php'>branding</a>
-			<a href='number_case.php'>illustration</a>
-			<a href='#'>game design</a>
-			<a href='#'>development</a>
-			-->
+			<a href='links.php'>links</a>
 			<a href='contact.php'>contact</a>
 			<div class='clear'></div>
 		</nav>
