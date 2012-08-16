@@ -12,7 +12,7 @@ body {
   font-size:16px;
   color:#0063a1;
   padding:20px;
-}
+  }
 a {
   color:#000;
   text-decoration:none;
@@ -25,12 +25,6 @@ a:hover {
   }
 .clear {
   clear:both;
-  }
-.clearr {
-  clear:right;
-  }
-.clearl {
-  clear:left;
   }
 
 /* 2.0 Unique styles */
@@ -67,9 +61,6 @@ footer {
 #tagline, .highlight, h3 {
   color:#ff0000;
   }
-.pleft, .pright, .plefth, .prighth {
-  width:100%;
-  }
 .imgcont, .submitbtn {
   background:url(../images/corner.png) no-repeat bottom right;
   }
@@ -103,6 +94,7 @@ h1 {
   }
 #label h1 {
   margin-top:8px;
+  margin-bottom:4px;
   }
 h2 {
   font-size:24px;
@@ -200,33 +192,21 @@ textarea {
 .imgcont img {
   border:2px solid #fff;
   }
-.work {
+.work, .links {
   margin:20px 0;
-  padding-bottom:40px;
   padding-top:0;
   }
-.work img {
-  max-width:30%;
-  /*margin-top:40px;*/
-  }
-.work a {
+.workcont {
   padding:4px;
+  float:left;
+  margin-right:12px;
+  max-width:30%;
   }
-.work a {
-  position:relative;
-  }
-.work img:hover {
+.workcont img:hover, .imgcont a img:hover  {
   border-color:#0063a1;
   }
 .workcaption {
-  /*display:block;*/
-  position:absolute;
-  top:24px;
-  left:0px;
-  /*padding:3px 6px;
-  background:#fff;*/
-  height:100%;
-  width:100%;
+  margin-bottom:8px;
   }
 .links {
   padding-top:20px;
@@ -254,51 +234,53 @@ textarea {
 .last {
   margin-right:0;
   }
-.left {
-  float:left;
-  margin:20px 20px 10px 0px;
+.pleft, .pright, .plefth, .prighth {
+  width:100%;
   }
-.right {
-  float:right;
-  margin:20px 0px 10px 20px;
+.left, .right {
+  clear:both;
+  margin-top:10px;
   }
 
-/* 0 - 640 px */
+/* small: 640 - 960 px */
 
-@media screen and (min-width: 320px) and (max-width: 639px) {
-	.logo {
-	  /*background-size:60%;*/
-	  }
+@media screen and (min-width: 620px) {
 	.pleft, .pright, .plefth, .prighth {
-	  width:40%;
-	  }
-	.imgsm {
-	  max-width:45%;
-	  }
-	.pleft, .pright {
+	  width:45%;
 	  padding-top:20px;
 	  }
+	.imgsm {
+	  max-width:40%;
+	  }
+	.left, .right {
+	  clear:none;
+	  }
+	.left {
+	  float:left;
+	  margin:20px 20px 10px 0px;
+	  }
+	.right {
+	  float:right;
+	  margin:20px 0px 10px 20px;
+	  }
 }
-/* 959 - 1330px */
 
-@media screen and (min-width: 959px) {
+/* medium: 960 - 1280px */
+
+@media screen and (min-width: 960px) {
 	header{
 	  border-bottom:1px solid #ff0000;
 	  }
 	.logo {
 	  float:left;
-	  margin:5px 30px 0 0;
-	  padding-top:50px;
+	  margin:0px 30px 0 0;
+	  padding-top:60px;
 	  padding-bottom:20px;
 	  text-align:left;
-	  background-size:80%;
-	  font-size:13px;
 	  }
-	.compact {/*note doubling up from above*/
+	.compact {
 	  background:url(../images/logo.png) no-repeat top left;
 	  width:254px;
-	  padding:55px 30px 0 0;
-	  margin:0 0 20px 0;
 	  }
 	.compact #tagline {
 	  display:block;
@@ -319,7 +301,6 @@ textarea {
 	  margin:20px 20px 0 0;
 	  border-top:1px solid #ff0000;
 	  width:664px;
-	  /*width:774px;*/
 	  float:left;
 	  }
 	#label {
@@ -341,31 +322,29 @@ textarea {
 	.work {
 	  float:left;
 	  margin-right:20px;
+	  text-align:center;
 	  width:28%;
 	  }
-	.work img {
+	.workcont {
 	  display:block;
 	  text-align:center;
-	  margin:12px 0;
+	  margin:0 0 8px 0;
 	  max-width:100%;
 	  }
 	.work h2 {
-	  margin-bottom:0;
+	  margin:12px 0;
 	  }
-	.plefth, .prighth, .pleft, .pright {
-	  padding-top:20px;
+	.clearr {
+	  clear:right;
 	  }
-	.clearl, .clearr {
-	  clear:none;
+	.clearl {
+	  clear:left;
 	  }
 	.plefth, .prighth {
 	  width:28%;
 	  }
 	.pleft, .pright {
 	  width:24%;
-	  }
-	.imgcont {
-	  /*clear:left;*/
 	  }
 	#contact {
 	  float:left;
@@ -386,7 +365,7 @@ textarea {
 	  width:65%;
 	}
 	#label {
-	  width:30%;
+	  width:25%;
 	  float:left;
 	  margin:40px 20px 0 0;
 	  }
@@ -394,18 +373,33 @@ textarea {
 	  width:33%;
 	  }
 	.pleft, .pright {
-	  width:20%;
+	  width:18%;
 	  }
 	.plefth, .prighth {
 	  width:25%;
 	  }
+	.clearl, .clearr {
+	  clear:none;
+	  }
 	.imgsm {
 	  max-width:100%;
+	  }
+	.work {
+	  width:20%;
 	  }
 	#sociallinks img, #sociallinks .caption {
 	  float:left;
 	  }
 	#sociallinks .caption {
 	  margin-left:12px;
+	  }
+	#hero {
+	  width:774px;
+	  }
+	.clearrs {
+	  clear:right;
+	  }
+	.clearls {
+	  clear:left;
 	  }
 }

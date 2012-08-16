@@ -20,9 +20,13 @@
 
 <script>
 	$(window).load(function() {
+		//initialise slider
 		$('.flexslider').flexslider();
-	  });
+	});
+	
 	$(document).ready(function() {
+		
+		//highlight selected page
 		var urlSplit = document.URL.split("/");
 		var currentPage = urlSplit[urlSplit.length -1];
 		$("nav a[href$='"+currentPage+"']").addClass("active");
@@ -31,21 +35,27 @@
 			$("nav").addClass("inner");
 		};
 		
-		// Use alt tags as titles
-		$('.work a img').each(function() {
+		// Use alt tags as titles on work page
+		$('.workcont img').each(function() {
 			$(this).after('<div class="workcaption">' + $(this).attr('alt') + '</div>');	
 		});
-		
-		/*$('.id a img').hover(function() {
-			var imgalt = $(this).attr('alt');
-			//needs to be specific to this caption's div
-			$('.idcap').html(imgalt);
-		});*/
 
 	});
+	
+	// email validation from W3 Schools
+	function validateForm() {
+		var x=document.forms["contactform"]["email"].value;
+		var atpos=x.indexOf("@");
+		var dotpos=x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+		  alert("Not a valid e-mail address");
+		  return false;
+		  }
+		}
+		
 </script>
 
-<link rel='shortcut icon' href='images/favicon.png'>
+<link rel='shortcut icon' href='../images/favicon.png'>
 <link href='css/style.css' rel='stylesheet' type='text/css'>
 <link href='css/flexslider.css' rel='stylesheet' type='text/css'>
 <link href='css/lightbox.css' rel='stylesheet' type='text/css'>
@@ -55,9 +65,8 @@
 </head>
 
 <body>
-
 	<header>
-		<div class='logo'><div id='tagline'>the work of Eleanor Paxman:<br />interaction designer and developer</div></div>
+		<div class='logo'><div id='tagline'>the work of Eleanor Paxman:<br />interaction designer</div></div>
 		<nav>
 			<a href='index.php'>home</a>
 			<a href='work.php'>work</a>

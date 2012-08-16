@@ -27,5 +27,36 @@
 </div>
 
 <div class='clear'></div>
-
+<?php
+  if(isset($_POST['subject'])) {
+	  $emailSubject = "";
+	  $emailMessage = $_POST['subject'] . "\n\r" . $_POST['message'];
+	  $emailFrom = $_POST['email'];
+	  $emailFromName = $_POST['name'];
+	  
+	  $emailTo = 'e.paxman.design@gmail.com';
+	  $headers = "From: ".$emailFrom;
+	  
+	  if (strlen($emailMessage) == 0) {
+		  echo 'You have not entered a message.';
+	  } else {
+		  
+		  if (strlen($emailFrom) > 0) {
+			  $emailSubject = '*** Website Contact from: "' . $emailFromName . '" <' . $emailFrom . '>'.'***';
+		  } else {
+			  $emailSubject = '*** Website Contact ***';
+		  }
+		  
+		  /* Send Email */
+		 if (mail($emailTo, $emailSubject, $emailMessage, $headers)) {
+			echo 'Your message has been sent!';
+		 } else {
+			 echo 'There was an internal error whilst sending your email.<br>';
+			echo 'Please try again later.';    
+		 }
+	  }
+	  
+  }
+?>
+  
 <?php include('include/foot.php'); ?>
