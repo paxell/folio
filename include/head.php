@@ -5,7 +5,7 @@
 
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
-<title>Paxell: The portfolio of Eleanor Paxman, interaction designer and developer</title>
+<title>Paxell: The portfolio of Eleanor Paxman, interaction designer</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
