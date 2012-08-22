@@ -206,6 +206,9 @@ textarea {
   margin-right:12px;
   max-width:30%;
   }
+.workcont a {
+  text-decoration:none;
+  }
 .workcont img:hover, .imgcont a img:hover  {
   border-color:#0063a1;
   }
